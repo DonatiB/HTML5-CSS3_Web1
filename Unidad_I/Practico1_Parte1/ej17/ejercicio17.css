@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    background-color: rgb(247, 170, 196);
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+}
+h2 {
+    color: green;
+    font-style:italic;
+}
+h3{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+}
+p{
+    color: red;
+    text-align: center;    
+}
+
+.ingredientes{
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+}
+.preparacion{
+    color: blue;
+    list-style: decimal; 
+    font-style: oblique;
+}
+    
+    

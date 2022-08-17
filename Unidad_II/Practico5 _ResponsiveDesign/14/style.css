@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 1px solid white;
+    color: white;
+    font-size: 120%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header, article, nav, aside, footer{
+    display: flex;
+    align-items: center;
+}
+header, footer{
+    height: 15%;
+    background-color: rgb(21, 102, 168);
+}
+article{
+    height: 40%;
+    background-color: rgb(194, 196, 197);
+    align-items: flex-start;
+}
+nav, aside{
+    height: 15%;
+    background-color: rgb(115, 190, 252);
+}
+
+@media only screen and (min-width: 660px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 15% 70% 15%;
+        grid-template-areas: 
+        "header header header header"
+        "nav article article aside"
+        "footer footer footer footer";
+    }
+    header, article, nav, aside, footer{
+        height: 100%;
+    }
+    article, nav, aside{
+        position: relative;
+    }
+    aside h2,
+    article h2,
+    nav h2{
+        position: absolute;
+        left: 4px;
+        top: 0;
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    article{
+        grid-area: article;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+}

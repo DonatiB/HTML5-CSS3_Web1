@@ -1,0 +1,84 @@
+html, body{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body, .conteinerCDE, header, .a, .b, .c, .d, .e{
+    display: flex;
+}
+body, .conteinerCDE{   
+    flex-direction: column;
+    border: 3px solid black;
+}
+header{
+    background-color: rgb(185, 184, 184);
+    height: 10%;   
+    padding-left: 2%;
+    border: 3px solid black;
+}
+header, .a, .b, .c, .d, .e{
+    align-items: center;
+}
+.a, .b, .c, .d, .e{
+    justify-content: center;
+    text-transform: uppercase;
+}
+.a{
+    display: none;
+    border: 3px solid black;
+}
+.b{
+    height: 45%;
+    border: 3px solid black;
+}
+.conteinerCDE{
+    height: 20%;
+    flex-direction: row;  
+}
+.c, .d{
+    width: 50%;
+    border: 3px solid black;
+}
+.e{
+    height: 25%;
+    border: 3px solid black;
+}
+
+@media only screen and (min-width: 660px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 60% 30%;
+        grid-template-areas: 
+        "header header header"
+        "a b b"
+        "conteinerCDE conteinerCDE e";
+    }
+    header{
+        grid-area: header;
+        height: 100%;
+    }
+    .a{
+        grid-area: a;
+        display: flex;
+        height: 100%;
+    }
+    .b{
+        grid-area: b;
+        height: 100%;
+    }
+    .conteinerCDE{
+        grid-area: conteinerCDE;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .e{
+        grid-area: e;
+        height: 100%;   
+    }
+
+}

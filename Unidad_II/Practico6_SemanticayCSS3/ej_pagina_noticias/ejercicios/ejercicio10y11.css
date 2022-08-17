@@ -1,0 +1,37 @@
+*{
+    height: 100%;
+    font-family:  sans-serif;
+}
+header, .content, footer{
+    border: solid 3px black;
+    padding: 1%;
+    margin: 0.5%;
+}
+header{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+.content{
+    height: 60%;  
+    display: flex;
+    align-items: flex-end;  
+}
+footer{
+    height: 15%;
+}
+h1{
+    height: 10%;
+}
+ul{
+    height: 10%;
+    display: flex;
+    list-style: none;
+    justify-self: flex-end;
+}
+li{
+    width: 15vw;
+    margin: 2%;
+}

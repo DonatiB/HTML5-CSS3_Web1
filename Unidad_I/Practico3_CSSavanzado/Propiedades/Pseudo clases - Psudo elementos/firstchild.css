@@ -1,0 +1,14 @@
+/*----------------  FIRST-CHILD  LAST-CHILD  --------------------*/
+p:first-child{
+    color: turquoise;
+}
+h2:last-child{
+    color: rgb(255, 0, 0);
+}
+
+h1:first-of-type{/*Seleccion el primero que sea parrafo de cada uno de los padres*/
+    background-color: yellow;
+}
+h1:last-of-type{    
+    background-color: rgb(124, 124, 24);
+}

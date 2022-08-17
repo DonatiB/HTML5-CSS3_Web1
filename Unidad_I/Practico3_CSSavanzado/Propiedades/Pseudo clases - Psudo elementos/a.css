@@ -1,0 +1,29 @@
+/* link */
+a:link {
+    color: red;
+}
+
+/* link visitado */
+a:visited {
+    color: blue;
+}
+
+/* mouse sobre link */
+a:hover {
+    color: green;
+}
+
+/* link seleccionado */
+a:active {
+    color: cyan;
+}
+
+p::first-letter {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+p::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+}

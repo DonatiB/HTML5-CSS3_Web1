@@ -1,0 +1,27 @@
+
+/*Queremos selecionar cada 3 de parrafos*/
+/*
+p:nth-child(3n){
+    background-color: aqua;
+}
+*/
+
+/*Ahora queremos selecionar cada 3 de parrafos pero empezando desde el decimo*/
+/*
+p:nth-child(3n + 10){
+    background-color: aqua;
+}
+*/
+
+/*Ahora queremos selecionar los 4 primeros parrafos*/
+/*
+p:nth-child(-n + 4){
+    background-color: aqua;
+}
+*/
+
+/*Seleccionar los 4 ultimos parrafos*/
+
+p:nth-last-child(-n + 4){
+    background-color: aqua;
+}

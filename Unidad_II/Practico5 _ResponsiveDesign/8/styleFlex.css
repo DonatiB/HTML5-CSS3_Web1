@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    background-color: orange;
+    height: 25%;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+section{
+    background-color: rgb(255, 255, 0);
+    height: 65%;
+}
+aside{
+    background-color: rgb(175, 37, 175);
+    height: 35%;
+}
+footer{
+    background-color: green;
+    height: 15%;
+}
+
+@media only screen and (min-width: 660px){
+        
+    header{
+        background-color: orange;
+        height: 25%;
+    }
+    .center{
+        flex-direction: row;
+    }
+    section{
+        background-color: rgb(255, 255, 0);
+        width: 70%;
+        height: 100%;
+    }
+    aside{
+        background-color: rgb(175, 37, 175);
+        width: 30%;
+        height: 100%;
+        
+    }
+    footer{
+        background-color: green;
+        height: 15%;
+    }
+}

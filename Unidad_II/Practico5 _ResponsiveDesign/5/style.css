@@ -1,0 +1,27 @@
+
+@media only screen and (min-width: 320px) and (max-width:480px){
+    body{
+        background-color: brown;  
+    }
+}
+@media only screen and (min-width: 481px) and (max-width:768px){
+    body{
+        background-color: rgb(29, 191, 202);  
+    }
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
+    body{
+        background-color: rgb(54, 111, 233);  
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width:1200px){
+    body{
+        background-color: rgb(241, 243, 116);  
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    body{
+        background-color: rgb(141, 243, 116);  
+    }
+}

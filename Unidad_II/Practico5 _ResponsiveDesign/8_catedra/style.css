@@ -1,0 +1,78 @@
+.header {
+    background-color: #FF4945;
+    padding: 20px 10px;
+}
+
+.main {
+    color: white;
+    background-color: #FFA931;
+    padding: 10px;
+
+    min-height: 300px;  /* solo para el ejemplo */
+}
+
+.sidebar {
+    color: white;
+    background-color: #9B0579;
+    padding: 10px;
+
+    min-height: 300px;  /* solo para el ejemplo */
+}
+
+
+
+footer {
+    color: white;
+    background-color: #00778F;
+    padding: 20px 10px;
+}
+
+/* Page Layout */
+.container {
+    display: grid;   
+    grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+}
+
+/* posicionamos los elementos donde queremos */
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* solo para pantallas superiores a 660px */
+@media only screen and (min-width: 660px) {
+
+/* Page Layout */
+    .container {
+        display: grid;   
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "main sidebar"
+            "footer footer";
+    }
+    .header {
+        grid-area: header;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+
+}

@@ -1,0 +1,54 @@
+/*--------AFTER - BEFORE----------*/
+h1::before{    
+    content: "Before - ";      
+}
+h1::after{    
+    content: " - After";      
+}
+h2::before{
+    content: "$";
+}
+h2::after{
+    content: ".00";
+}
+
+h2{
+    color: rgb(29, 27, 27);
+    font-size: 4em;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    
+    &::before{
+        content: "$";
+    }
+    &::after{
+        content: ".00";
+    }
+}
+
+.esfera{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: teal;
+    margin: auto; /*Para que se centre*/
+    position: relative;
+}
+.esfera::after{
+    content: "";
+    display: block;
+    width: 150PX;
+    height: 15px;
+    background: #000;
+    position: absolute;
+    bottom: 0; /*Para que se coloque en la parte de abajo */
+    left: 50%; /*Para que comience justo en la mitad */
+    border-radius: 50%;/*Para que genere el ovalo*/
+    box-shadow: 0 0 10px 10px #000;
+    opacity: .6;
+    z-index: -1;/*como es un hijo del div padre, aparece por encima. la unica manera de que aparezca por detras es con z-index */
+}
+
+

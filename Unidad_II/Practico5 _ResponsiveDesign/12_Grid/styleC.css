@@ -1,0 +1,36 @@
+@media only screen and (min-width: 320px) and (max-width:480px ){
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+    .a, .b, .c, .d{
+        border: 3px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 200%;
+        font-weight: bolder;
+    }
+    .a{
+        grid-area: a;
+    }
+    .b{
+        grid-area: b;
+    }
+    .c{
+        grid-area: c;
+    }
+    .d{
+        grid-area: d;
+    }
+} 

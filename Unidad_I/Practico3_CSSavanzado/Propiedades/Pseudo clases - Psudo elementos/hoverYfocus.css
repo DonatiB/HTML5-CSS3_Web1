@@ -1,0 +1,28 @@
+*{
+    list-style: none;
+}
+
+.botones{
+    display: flex;
+}
+li{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    width: 150%;
+    height: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4%;
+    border: 3px solid black;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+}
+li:focus{
+    background-color: rgb(98, 248, 191);
+    color: rgb(0, 255, 234);
+}

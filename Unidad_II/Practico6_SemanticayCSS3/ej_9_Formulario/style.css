@@ -1,0 +1,23 @@
+.form_, .seleccionables{
+    height: 100%;
+    width: 600px;
+    margin: 4vh auto;
+    border: solid 2px black;
+    padding: 3%;
+}
+.form_{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 3% 0 3% 0;
+}
+select{
+    margin-bottom: 12vh;
+}
+
+.seleccionables{
+    display: flex;
+    flex-direction: column;
+     
+}
